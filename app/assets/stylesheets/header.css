@@ -1,0 +1,7 @@
+
+
+.alert li {
+    display: inline-block;
+    float: right;
+    padding: 14px;
+}
