@@ -13,6 +13,11 @@ class DestinationsController < ApplicationController
         @destination = Destination.find(params[:id])
     end
     def create
-        @destination = Destination.create(user_params)
+        @destination = Destination.create(destination_params)
+    end
+
+    private 
+    def destination_params
+        params.require(:name).permit(country_id:, :what_to_do)
     end
 end

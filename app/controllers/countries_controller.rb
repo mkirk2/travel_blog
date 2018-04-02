@@ -14,6 +14,11 @@ class CountriesController < ApplicationController
         @destinations = Destination.all
     end
     def create
-        @country = Country.create(klass_params)
+        @country = Country.create(country_params)
+    end
+
+    private
+    def country_params
+        params.require(:name).permit(:continent, :costs, :tips)
     end
 end

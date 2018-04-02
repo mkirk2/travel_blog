@@ -1,3 +1,34 @@
 <h1 align="center"> Where do you want to go? </h1>
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-E_A3IQFCxkmmgvZrCan6ryCOEX81fR5uuNr1wFr990Gl2IyHzg"> 
+    <br>
+
+    <div> <table id="country-table" align="center">
+    <tr>
+      <th>Country</th>
+      <th>Continent</th> 
+    </tr>
+
+    <tr>
+    <% @countries.each do |country| %>
+        <td><%= link_to(country.name, "/countries/#{country.id}", class: "grey-link") %></td>
+        <td><%= country.continent %></td>
+    </tr>
+    <% end %>
+
+    <br>
+    </div>
+
+<img src= https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Simple_world_map.svg/2000px-Simple_world_map.svg.png width="100%" height="auto">
+
+<br>
+<br>
+
+<style>
+
+#country-table th, #country-table td {
+    width: 70%;
+    border: 2px solid black;
+    border-color: #585858;
+  }
+
+<style>

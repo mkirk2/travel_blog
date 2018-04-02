@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   resources :countries
   root 'welcome#index'
   resources :destinations
+  resources :tips
 
 end
