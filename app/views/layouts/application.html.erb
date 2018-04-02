@@ -11,15 +11,18 @@
   </head>
 
   <body>
-    <div class="alert alert-info">
+      <div class="alert alert-light">
       <%= notice %>
-      
+      <div class="headline-div"> <h1 align="center"> <%= link_to "Oz & Oso", "/", class: "grey-link2" %> </h1>
+      </div>
+      <br>
+      <h4><%= link_to "Countries", "/countries", class: "grey-link" %></h4>
+      <h4><%= link_to "Travel Tips", "/traveltips", class: "grey-link" %></h4>
       <% if user_signed_in? %>
-      <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+      <h4><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "grey-link" %></h4>
       <% else %>
-      <li><%= link_to "Sign Up", new_user_registration_path %></li>
-      <li><%= link_to "Login", new_user_session_path %></li>
-      <h5><li><%= link_to "Countries", "/countries" %><li></h5>
+      <h4><%= link_to "Sign Up", new_user_registration_path, class: "grey-link" %></h4>
+      <h4><%= link_to "Login", new_user_session_path, class: "grey-link" %></h4>
       <% end %>
 
     </div>

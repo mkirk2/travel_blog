@@ -1,7 +1,48 @@
 
-
-.alert li {
+.alert div h1 {
+    border-left: 2px solid #585858;
+    border-bottom: 2px solid #585858;
+    padding: 10px;
+    color: #585858;
+    width: 30%;
+    height: auto;
     display: inline-block;
-    float: right;
-    padding: 14px;
+}
+
+.alert div h1 a.grey-link2 {
+    color:#585858;
+}
+
+.alert div h1 :hover {
+    text-decoration: none;
+}
+
+.headline-div {
+    width: 100%;
+    text-align: center;
+}
+
+.alert h4 {
+    background-color: none;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 110px;
+    padding-left: 110px;
+    border-left: 2px solid #585858;
+    border-right: 2px solid #585858;
+}
+
+.alert h4 a.grey-link {
+    color:#585858;
+}
+
+.alert h4 :hover{
+    text-decoration: none;
+    background-color: #D8D8D8;
+    color: #81BEF7;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
