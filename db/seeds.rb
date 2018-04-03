@@ -15,3 +15,8 @@ cuzco = Destination.find_or_create_by!(name: "Cuzco", country_id: peru.id, what_
 bagan = Destination.find_or_create_by!(name: "Bagan", country_id: myanmar.id, what_to_do: "look at temples")
 el_nido = Destination.find_or_create_by!(name: "EL Nido", country_id: philipines.id, what_to_do: "swim")
 nairobi = Destination.find_or_create_by!(name: "Nairobi", country_id: kenya.id, what_to_do: "look at animals")
+
+Tip.find_or_create_by!({name: "How to save when you're travelling", information: "Don't waste money and stuff"})
+Tip.find_or_create_by!({name: "How to travel solo", information: "Stay with a group when you can"})
+Tip.find_or_create_by!({name: "Avoiding travel sickness", information: "minimize street food consumption"})
+Tip.find_or_create_by!({name: "What to pack", information: "Not too much"})

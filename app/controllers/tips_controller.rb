@@ -10,8 +10,7 @@ class TipsController < ApplicationController
         @tips = Tip.edit
     end
     def show
-        @tips = Tip.find(params[:id])
-        @tips = Tip.all
+        @tip = Tip.find(params[:id])
     end
     def create
         @tip = Tip.create(klass_params)

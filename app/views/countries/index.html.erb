@@ -1,20 +1,20 @@
 <h1 align="center"> Where do you want to go? </h1>
 
-    <br>
-
+<br>
+<br>
     <div> <table id="country-table" align="center">
     <tr>
-      <th>Country</th>
+      <th>Country</th> 
       <th>Continent</th> 
     </tr>
 
     <tr>
     <% @countries.each do |country| %>
-        <td><%= link_to(country.name, "/countries/#{country.id}", class: "grey-link") %></td>
-        <td><%= country.continent %></td>
+       <td><%= link_to(country.name, "/countries/#{country.id}", class: "grey-link") %></td>
+       <td><%= country.continent %></td>
     </tr>
     <% end %>
-
+    </table>
     <br>
     </div>
 

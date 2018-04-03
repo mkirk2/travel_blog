@@ -1,1 +1,12 @@
-hello world
+<img src= https://photos-6.dropbox.com/t/2/AADuTLYs5pKPwiMXBAFesi1vOglFRUIWQegIRyWvzw_ARA/12/683766028/jpeg/32x32/1/_/1/2/IMG_0513%20(1).JPG/EN_f6M0FGMMJIAcoBw/C0F5XyR-tetIGsDVkxrXZWIm8A52a7oQk3LIkB6aCs8?size=1280x960&size_mode=3 width="100%" height="auto">
+
+<h1 align="center"> Know what you're doing before you go </h1>
+<br>
+<h3 align="center"> Our tips </h3> 
+<br>
+<% @tips.each do |tip| %>
+    <h3> <%= link_to(tip.name, "/tips/#{tip.id}") %> </h3>
+<% end %>
+<br>
+<br>
+<br>

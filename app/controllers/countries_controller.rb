@@ -11,7 +11,7 @@ class CountriesController < ApplicationController
     end
     def show
         @country = Country.find(params[:id])
-        @destinations = Destination.all
+        @destinations = @country.destinations
     end
     def create
         @country = Country.create(country_params)

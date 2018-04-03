@@ -15,9 +15,10 @@ class DestinationsController < ApplicationController
     def create
         @destination = Destination.create(destination_params)
     end
-
-    private 
-    def destination_params
-        params.require(:name).permit(country_id:, :what_to_do)
+    def featured_destinations
+        @featured_destinations = [Destination.find_by(name:"Cuzco"), Destination.find_by(name:"Nairboi"), Destination.find_by(name:"Bagan"), Destination.find_by(name:"El Nido")]
+        @featured_destinations.each do |destination|
+            "/destinations/#{destination.id}"
+        end
     end
 end
