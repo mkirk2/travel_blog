@@ -6,6 +6,7 @@ class CreateDestinations < ActiveRecord::Migration[5.1]
       t.string :what_to_do
       t.string :panorama
       t.string :image
+      t.boolean :is_feature?
     end
   end
 end

@@ -1,13 +1,15 @@
-<img src= @destination.panorama width="100%" height="auto">
+<img src= <%= @destination.panorama %> width="100%" height="auto">
 
 <h2 align="center"> <%= @destination.name.upcase %> </h2>
 <br>
 <%= @country_id %>
 <br>
 <br>
-<b> What to do when you're here: </b> <%= "#{@destination.what_to_do}" %>
+<b> <%= "What to do when you're in #{@destination.name}: " %> </b> <%= "#{@destination.what_to_do}" %>
 <br>
 <br>
 <br>
 
-<img src= @destination.image width="100%" height="auto">
+<img src= <%= @destination.image %> width="30%" height="auto">
+<br>
+<br>

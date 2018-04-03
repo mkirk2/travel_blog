@@ -11,9 +11,9 @@
 
 <div class="card-deck">
   <div class="card">
-    <img class="card-img-top" src="https://photos-5.dropbox.com/t/2/AACBs9jMjk-a02tlyn6SmUE02aerlQOGvF-CvW0busFnzA/12/683766028/jpeg/32x32/1/_/1/2/March.JPG/EN_f6M0FGMMJIAcoBw/AaxCJ-4yaI5nJuSUM_cuVtheR2ixESLx2y-C6V9gPr8?size=1280x960&size_mode=3" alt="Card image cap">
+    <img class="card-img-top" src= <%= "#{@featured_destinations[0].image}" %> alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title"><%= link_to "Cuzco, Peru", "/destinations/:id" %></h5>
+      <h5 class="card-title"><%= link_to "#{@featured_destinations[0].name}, #{@countries[@featured_destinations[0].id-1].name}", "/destinations/#{@featured_destinations[0].id}" %></h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     </div>
     <div class="card-footer">
@@ -21,9 +21,9 @@
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="https://photos-4.dropbox.com/t/2/AACkvzQ2qOoJSA1uOWLcpkixntSptbsp8DhrvN5bvTNRWA/12/683766028/jpeg/32x32/1/_/1/2/IMG_1489%203.30.39%20pm.JPG/EN_f6M0FGMMJIAcoBw/vlT6cknlcxnl5N0axS5BCKgwBCU8igF3kHtvejdwqYw?size=1280x960&size_mode=3" alt="Card image cap">
+    <img class="card-img-top" src= <%= "#{@featured_destinations[1].image}" %> alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title"> <%= link_to "Bagan, Myanmar", "/destinations/:id" %> </h5>
+      <h5 class="card-title"> <%= link_to "#{@featured_destinations[1].name}, #{@countries[@featured_destinations[1].id-1].name}", "/destinations/#{@featured_destinations[1].id}" %> </h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
     </div>
     <div class="card-footer">
@@ -31,9 +31,9 @@
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="https://photos-4.dropbox.com/t/2/AAD75CQYGXAIojbrH2beFak63iAPr7V1tP4wXR3Sm63vlg/12/683766028/jpeg/32x32/1/_/1/2/IMG_0850.JPG/EN_f6M0FGMMJIAcoBw/x15k2iPfAPXYC5-vfXweC7JyPHR_AEXMIRToVufTe_s?size=1280x960&size_mode=3" alt="Card image cap">
+    <img class="card-img-top" src= <%= "#{@featured_destinations[2].image}" %> alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title"><%= link_to "El Nido, Philippines", "/destinations/:id" %></h5>
+      <h5 class="card-title"><%= link_to "#{@featured_destinations[2].name}, #{@countries[@featured_destinations[2].id-1].name}", "/destinations/#{@featured_destinations[2].id}" %></h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     </div>
     <div class="card-footer">
@@ -46,9 +46,9 @@
 <br>
 
 <div class="card bg-dark text-white">
-  <img class="card-img" src="https://photos-2.dropbox.com/t/2/AADLQDt7OLs6mwnWHEmHQwe4ghYg8Gf-DEv6YxjyYv0biA/12/683766028/jpeg/32x32/1/_/1/2/IMG_0538%20(1).JPG/EN_f6M0FGMMJIAcoBw/_Go_BndznkfOez7-4EBf-mFcgjdBFqVPHbJOmZ4yLdc?size=1280x960&size_mode=3" alt="Card image">
+  <img class="card-img" src= <%= "#{@featured_destinations[3].panorama}" %> alt="Card image">
   <div class="card-img-overlay">
-    <h5 class="card-title"><%= link_to "Nairobi, Kenya", "/destinations/:id" %></h5>
+    <h5 class="card-title"><%= link_to "#{@featured_destinations[3].name}, #{@countries[@featured_destinations[3].id-1].name}", "/destinations/#{@featured_destinations[3].id}" %></h5>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     <p class="card-text"></p>
   </div>

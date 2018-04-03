@@ -1,4 +1,4 @@
-<img src= @country.panorama width="100%" height="auto">
+<img src= <%= @country.panorama %> width="100%" height="auto">
 
 <h2 align="center"> <%= @country.name.upcase %> </h2>
 <br>
@@ -15,14 +15,16 @@
     <br>
 </div>
 
-<h3> <%= "Must visit destinations in #{@country.name}" %> </h3>
+<h5> <%= "Must visit destinations in #{@country.name}" %> </h5>
 <br>
 <% @destinations.each do |destination| %>
-    <%= link_to(destination.name, "/destinations/#{destination.id}") %>
+    <li> <%= link_to(destination.name, "/destinations/#{destination.id}") %> </li>
     <br>
 <% end %>
+<br>
+<br>
 
-<img src= @country.image width="100%" height="auto">
+<img src= <%= @country.image %> width="30%" height="auto">
 
 <br>
 <br>

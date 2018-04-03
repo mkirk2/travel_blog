@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20180403143310) do
     t.string "what_to_do"
     t.string "panorama"
     t.string "image"
+    t.boolean "is_feature?"
   end
 
   create_table "tips", force: :cascade do |t|
