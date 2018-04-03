@@ -4,6 +4,8 @@ class CreateDestinations < ActiveRecord::Migration[5.1]
       t.string :name
       t.string :country_id
       t.string :what_to_do
+      t.string :panorama
+      t.string :image
     end
   end
 end

@@ -17,12 +17,16 @@ ActiveRecord::Schema.define(version: 20180403143310) do
     t.string "continent"
     t.string "costs"
     t.string "tips"
+    t.string "panorama"
+    t.string "image"
   end
 
   create_table "destinations", force: :cascade do |t|
     t.string "name"
     t.string "country_id"
     t.string "what_to_do"
+    t.string "panorama"
+    t.string "image"
   end
 
   create_table "tips", force: :cascade do |t|
