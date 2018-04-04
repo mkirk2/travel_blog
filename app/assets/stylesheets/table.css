@@ -1,8 +1,12 @@
 a.grey-link3 {
     color:#585858;
+    text-decoration: none;
+}
+
+a.grey-link3 :hover {
+    text-decoration: none;
 }
 
 .table#country-table {
     color: #585858;
-    text-decoration-color: #585858;
 }

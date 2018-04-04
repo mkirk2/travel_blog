@@ -1,8 +1,7 @@
-div h6 a.blue-link {
+div h5 a.blue-link {
     color: #585858;
     text-decoration: none;
 }
-
 
 .tip {
     display: inline-block;
@@ -13,4 +12,8 @@ div h6 a.blue-link {
 
 .tipshow {
     padding-left: 50px;
+}
+.tipindex {
+    text-decoration: none;
+    color: #585858;
 }

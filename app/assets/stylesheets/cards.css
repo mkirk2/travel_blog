@@ -1,3 +1,17 @@
-.card-title {
+.card-title a {
     color: black;
+}
+
+.card-title {
+    background-color: #CEECF5;
+    text-align: center;
+    padding: 30px;
+}
+
+.card-title2 a {
+    color: white;
+}
+
+.card-footer:last-child {
+    background-color: #CEECF5;
 }

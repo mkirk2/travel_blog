@@ -5,13 +5,14 @@
 <h3 align="center", style="color:#585858"> Our tips </h3> 
 <br>
 
-<div> <% @tips.each do |tip| %>
-    <div class="tip">
+<div class="row"> <% @tips.each do |tip| %>
+    <div class="tip col-4">
         <img src= <%= "#{tip.image}" %> width=400px height=270px>
-        <h5> <%= link_to tip.name, "/tips/#{tip.id}", class: "blue-link" %> </h5> 
-    <br>
+        <h5> <%= link_to tip.name, "/tips/#{tip.id}", class: "blue-link" %> </h5>
+        <br>
     </div>
-<% end %> </div>
+<% end %> 
+</div>
 <br>
 <br>
 <br>
