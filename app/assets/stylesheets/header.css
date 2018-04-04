@@ -1,3 +1,9 @@
+div.alert.alert-light {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
 
 .alert div h1 {
     /* border-left: 2px solid #585858;
@@ -42,10 +48,13 @@
 
 .alert h4 :hover{
     text-decoration: none;
-    background-color: #D8D8D8;
-    color: #81BEF7;
+    /* background-color: #D8D8D8; */
     padding-bottom: 0px;
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
+}
+
+.page-content {
+    padding-top: 160px;
 }

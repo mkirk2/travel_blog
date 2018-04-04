@@ -15,7 +15,6 @@
       <%= notice %>
       <div class="headline-div"> <h1 align="center"> <%= link_to "Oz & Oso", "/", class: "grey-link2" %> </h1>
       </div>
-      <br>
         <div>
         <h4><%= link_to "Countries", "/countries", class: "grey-link" %></h4>
         <h4><%= link_to "Travel Tips", "/tips", class: "grey-link" %></h4>
@@ -29,6 +28,6 @@
 
     </div>
   
-    <%= yield %>
+    <div class="page-content"> <%= yield %> </div>
   </body>
 </html>

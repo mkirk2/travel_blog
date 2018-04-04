@@ -1,12 +1,18 @@
 <img src= https://photos-6.dropbox.com/t/2/AADuTLYs5pKPwiMXBAFesi1vOglFRUIWQegIRyWvzw_ARA/12/683766028/jpeg/32x32/1/_/1/2/IMG_0513%20(1).JPG/EN_f6M0FGMMJIAcoBw/C0F5XyR-tetIGsDVkxrXZWIm8A52a7oQk3LIkB6aCs8?size=1280x960&size_mode=3 width="100%" height="auto">
 
-<h1 align="center"> Know what you're doing before you go </h1>
+<h1 align="center", style="color:#585858"> Know what you are doing before you go </h1>
 <br>
-<h3 align="center"> Our tips </h3> 
+<h3 align="center", style="color:#585858"> Our tips </h3> 
 <br>
-<% @tips.each do |tip| %>
-    <h3> <%= link_to(tip.name, "/tips/#{tip.id}") %> </h3>
-<% end %>
+
+<div> <% @tips.each do |tip| %>
+    <div class="tip">
+        <img src= <%= "#{tip.image}" %> width=400px height=270px>
+        <h5> <%= link_to tip.name, "/tips/#{tip.id}", class: "blue-link" %> </h5> 
+    <br>
+    </div>
+<% end %> </div>
 <br>
 <br>
 <br>
+

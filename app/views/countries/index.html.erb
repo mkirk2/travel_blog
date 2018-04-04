@@ -1,17 +1,17 @@
-<h1 align="center"> Where do you want to go? </h1>
+<h2 align="center", style="color:#585858"> Where do you want to go? </h2>
 
 <br>
 <br>
     <div> <table id="country-table" align="center">
-    <tr>
-      <th>Country</th> 
-      <th>Continent</th> 
+    <tr class = "table">
+      <th style="width: 70%">Country</th> 
+      <th style="background-color:#E0E6F8;">Continent</th> 
     </tr>
 
     <tr>
     <% @countries.each do |country| %>
-       <td><%= link_to(country.name, "/countries/#{country.id}", class: "grey-link") %></td>
-       <td><%= country.continent %></td>
+       <td><%= link_to(country.name, "/countries/#{country.id}", class: "grey-link3") %></td>
+       <td style="background-color:#E0E6F8;"><%= country.continent %></td>
     </tr>
     <% end %>
     </table>
@@ -26,9 +26,13 @@
 <style>
 
 #country-table th, #country-table td {
-    width: 70%;
     border: 2px solid black;
     border-color: #585858;
+    color: #585858;
+  }
+
+  #country-table th {
+    text-align: center;
   }
 
 <style>

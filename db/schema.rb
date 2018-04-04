@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20180403143310) do
   create_table "tips", force: :cascade do |t|
     t.string "name"
     t.string "information"
+    t.string "image"
   end
 
   create_table "users", force: :cascade do |t|

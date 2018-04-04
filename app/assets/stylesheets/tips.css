@@ -1,0 +1,16 @@
+div h6 a.blue-link {
+    color: #585858;
+    text-decoration: none;
+}
+
+
+.tip {
+    display: inline-block;
+    width: 30%;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.tipshow {
+    padding-left: 50px;
+}

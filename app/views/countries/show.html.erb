@@ -14,18 +14,17 @@
     <br>
     <br>
 </div>
-
-<h5> <%= "Must visit destinations in #{@country.name}" %> </h5>
-<br>
-<% @destinations.each do |destination| %>
-    <li> <%= link_to(destination.name, "/destinations/#{destination.id}") %> </li>
+    <div class="countryshow">
+    <h5> <%= "Must visit destinations in #{@country.name}" %> </h5>
     <br>
-<% end %>
-<br>
-<br>
-
-<img src= <%= @country.image %> width="30%" height="auto">
-
+    <% @destinations.each do |destination| %>
+        <li> <%= link_to(destination.name, "/destinations/#{destination.id}") %> </li>
+        <br>
+    <% end %>
+    <br>
+    <br>
+    <img src= <%= @country.image %> width="30%" height="auto">
+</div>
 <br>
 <br>
 <br>
