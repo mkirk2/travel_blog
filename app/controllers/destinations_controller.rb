@@ -14,5 +14,6 @@ class DestinationsController < ApplicationController
     end
     def create
         @destination = Destination.create(destination_params)
+        @comment = Comment.new( :destination => @destination )
     end
 end
