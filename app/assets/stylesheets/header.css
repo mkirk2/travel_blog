@@ -6,9 +6,8 @@ div.alert.alert-light {
 }
 
 .alert div h1 {
-    /* border-left: 2px solid #585858;
-    border-bottom: 2px solid #585858; */
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: #585858;
     width: 30%;
     height: auto;
@@ -31,8 +30,8 @@ div.alert.alert-light {
 .alert h4 {
     background-color: none;
     display: inline-block;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     border-left: 2px solid #585858;
     border-right: 2px solid #585858;
 }
@@ -56,5 +55,5 @@ div.alert.alert-light {
 }
 
 .page-content {
-    padding-top: 160px;
+    padding-top: 120px;
 }

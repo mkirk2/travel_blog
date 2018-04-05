@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
         @comment.destroy
     end
 
-    
+    before_action :authenticate_user! 
     def create
         comment = Comment.new(comment_params)
         comment.destination_id = params[:destination_id]

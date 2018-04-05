@@ -3,15 +3,17 @@
 <br>
 <br>
     <div> <table id="country-table" align="center">
+    <col width = "300">
+    <col width = "300">
     <tr class = "table">
-      <th style="width: 70%">Country</th> 
-      <th style="background-color:#E0E6F8;">Continent</th> 
+      <th><h3>Country</h3></th> 
+      <th style= "background-color:#E0E6F8;"><h3>Continent</h3></th>
     </tr>
 
     <tr>
-    <% @countries.each do |country| %>
-       <td><%= link_to(country.name, "/countries/#{country.id}", class: "grey-link3") %></td>
-       <td style="background-color:#E0E6F8;"><%= country.continent %></td>
+    <% @countries.order('name').each do |country| %>
+       <td><h5><%= link_to(country.name, "/countries/#{country.id}", class: "grey-link3") %></h5></td>
+       <td style="background-color:#E0E6F8;"><h5><%= country.continent %></h5></td>
     </tr>
     <% end %>
     </table>
