@@ -3,7 +3,12 @@
 }
 
 .form-group {
-    width: 100%;
+    width: 50%;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.btn_btn-primary_btn-md {
+    background-color: #E0E6F8;
+    border-color: #585858;
 }

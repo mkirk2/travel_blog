@@ -13,8 +13,12 @@
 ActiveRecord::Schema.define(version: 20180404201945) do
 
   create_table "comments", force: :cascade do |t|
-    t.string "user"
-    t.string "comments"
+    t.text "body"
+    t.integer "destination_id"
+    t.string "user_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["destination_id"], name: "index_comments_on_destination_id"
   end
 
   create_table "countries", force: :cascade do |t|

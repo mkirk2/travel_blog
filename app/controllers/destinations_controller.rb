@@ -11,6 +11,8 @@ class DestinationsController < ApplicationController
     end
     def show
         @destination = Destination.find(params[:id])
+        @comment = Comment.new
+        @comment.destination_id = @destination.id
     end
     def create
         @destination = Destination.create(destination_params)
