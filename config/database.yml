@@ -27,4 +27,5 @@ test:
 production:
   <<: *default
   database: travel_blog_production
+  username: travel_blog
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
