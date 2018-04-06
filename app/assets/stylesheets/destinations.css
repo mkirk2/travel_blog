@@ -12,3 +12,13 @@
     background-color: #E0E6F8;
     border-color: #585858;
 }
+
+div.alert.alert-primary {
+    background-color: #E0E6F8;
+    border-color: #585858;
+}
+
+a.list-group-item.active {
+    background-color: #E0E6F8;
+    border-color: #585858;
+}
