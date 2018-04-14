@@ -20,7 +20,24 @@
     <br>
     </div>
 
-<img src= https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Simple_world_map.svg/2000px-Simple_world_map.svg.png width="100%" height="auto">
+# <img src= https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Simple_world_map.svg/2000px-Simple_world_map.svg.png width="100%" height="auto">
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(0,0),
+    zoom:1,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var kenya = new google.maps.Marker({-0.0236, 37.9062});
+var myanmar = new google.maps.Marker({21.9162, 95.9560});
+var peru = new google.maps.Marker({-9.1900, -75.0152});
+var philippines = new google.maps.Marker({12.8797, 121.7740});
+var mongolia = new google.maps.Marker({46.8625, 103.8467});
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-AIzaSyCt2ldRmC0Aty9kPV0zB4Zk2obk5YBJolE&callback=myMap"></script>
 
 <br>
 <br>
