@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-peru = Country.find_or_create_by!(name: 'Peru', continent: 'South America', costs: '2/5', tips: 'have fun and stuff', panorama: "https://matthewkirk.smugmug.com/My-New-Gallery/i-6rBBmrW/A", image: "https://c1.staticflickr.com/8/7107/7034974831_69011449de_b.jpg") 
+peru = Country.find_or_create_by!(name: 'Peru', continent: 'South America', costs: '2/5', tips: 'have fun and stuff', panorama: "https://photos.app.goo.gl/AiDYFbyhf4mbo5Sh1", image: "https://c1.staticflickr.com/8/7107/7034974831_69011449de_b.jpg") 
 myanmar = Country.find_or_create_by!(name: 'Myanmar', continent: "Asia", costs: "2/5", tips: "do stuff", panorama: "https://www.amazon.com.au/clouddrive/share/uv0pIBwPi9FG9nHr4IPkiDAzCDJXMdcKn4UnIJOyUaj", image: "https://stat.ameba.jp/user_images/20130323/11/tanah-air/13/00/j/o0630042012469255045.jpg?caw=800")
 philippines = Country.find_or_create_by!(name: 'Philippines', continent: 'Asia', costs: '2/5', tips: "go to the beach", panorama: "https://www.amazon.com.au/clouddrive/share/Jw7IRGytyx7iNaZFOfk5mwk3I2TEQeJzqIzenEKGyuZ", image: "https://c1.staticflickr.com/5/4121/4755336720_96a62f8cd3_b.jpg")
 kenya = Country.find_or_create_by!(name: "Kenya", continent: "Africa", costs: "4/5", tips: "avoid scams", panorama: "https://www.amazon.com.au/clouddrive/share/E3l3DkAR7NNg27ozjbP0K8vYsuqwT7Iq2rmucPuewG5", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Giraffes_in_Masai_Mara.jpg/1280px-Giraffes_in_Masai_Mara.jpg")
